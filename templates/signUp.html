@@ -13,9 +13,9 @@
 </head>
 <body>
     <h1>SIGN UP</h1>
-    <form action= '/createAccount' method='POST'>
+    <form action= '/createaccount' method='POST'>
       {% if message %}
-      <p class="message"><font color="red">{{ message | safe }}</font></p>
+      <p class="message"></p>{{ message | safe }}</p>
       {% endif %}
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
