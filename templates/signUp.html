@@ -17,7 +17,7 @@
     <h1>SIGN UP</h1>
     <form action= '/createaccount' method='POST'>
       {% if message %}
-      <p class="message"></p>{{ message | safe }}</p>
+      <p class="error">{{ message | safe }}</p>
       {% endif %}
         <div class="mb-3">
           <label for="email" class="form-label">Email address</label>
@@ -25,7 +25,7 @@
         </div>
         <div class="mb-3">
           <label for="password" class="form-label">Username</label>
-          <input type="password" class="form-control" id="username" name="username">
+          <input type="text" class="form-control" id="username" name="username">
         </div>
         <div class="mb-3">
             <label for="dateOfBirth" class="form-label">Password</label>
