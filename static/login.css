@@ -1,0 +1,28 @@
+body{
+    font-family: 'Permanent Marker', cursive;
+    background-image: url("background.png");
+}
+
+h1{
+    font-size:36x;
+}
+
+p{
+    font-size:18px;
+}
+
+input{
+    font-family: 'Arial', sans-serif, serif;
+
+}
+
+.postIT{
+    width:50%;
+    background-color:#ffff50;
+    padding:5px;
+}
+
+
+#username:focus{
+    outline: none;
+}
