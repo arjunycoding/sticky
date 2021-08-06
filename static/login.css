@@ -1,6 +1,5 @@
 body{
     font-family: 'Permanent Marker', Arial, sans-serif;
-    background-image: url("background.png");
 }
 
 h1{
@@ -15,22 +14,22 @@ input{
     font-family: 'Arial', sans-serif, serif;
     border: none !important;
     border-bottom: 3px solid black ! important;
-    background-color:#ffff50 !important;
-
+    background-color:inherit !important;
+    width:50%;
 }
 
 .postIT{
-    width:300px;
-    height:100px;
-    background-color:#ffff50;
+    width:50%;
+    height:50%;
+    background: rgb(255,251,164);
+background: linear-gradient(328deg, rgba(255,251,164,1) 9%, rgba(255,255,80,1) 98%);
     padding:5px;
+    margin:1% 25% 0% 25%;
 }
 
 
-#username:focus{
-    outline: none;
-}
+
 h1{
-    background-color:#ffff50;
+    background-color:inherit;
     padding: 10px;
 }

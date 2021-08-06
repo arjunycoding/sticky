@@ -14,8 +14,8 @@
         <title>Login!</title>
     </head>
 <body>
+  <div class="postIT">
     <h1>LOGIN</h1>
-    <br/>
     <form action='/mainpage' method='POST'>
       {% if message %}
       <p class="message">{{ message | safe }}</p>
@@ -23,17 +23,19 @@
       {% if warning %}
       <p class="warning">{{ warning | safe }}</p>
       {% endif %}
-        <div class="postIT">
-            <label for="username" class="form-label">Username</label>
-            <input type="text" class="form-control" id="username" name="username" placeholder="Type Here">
-          </div>
+      <br/>
+      <br/>
+          <span>Username</span>
           <br/>
-        <div class="postIT">
-          <label for="password" class="form-label">Password</label>
+          <input type="text" class="form-control" id="username" name="username" placeholder="Type Here">
+          <br/>
+          <span>Password</span>
           <input type="password" class="form-control" id="password" name="password" placeholder="Type Here">
-        </div>
+        <br/>
+        <br/>
         <button type="submit" class="btn btn-primary">Login!</button>
         <button type="button" class="btn btn-secondary" onclick="window.location='/signup'">Not Signed in? <u>Sign up</u></button>
     </form>
+  </div>
 </body>
 </html>
