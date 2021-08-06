@@ -48,7 +48,6 @@ def createaccount():
         db.session.add(data)
         db.session.commit()
         return render_template('login.html')
-
     return render_template('signUp.html', message='Sorry! Your username or email was already taken')
 
 
