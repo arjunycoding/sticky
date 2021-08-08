@@ -10,7 +10,7 @@ if ENV == 'dev':
     app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://postgres:a.yuvAc*@localhost/sticky'
 else:
     app.debug = False
-    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://rrzgfxwihjdrdp:8bd3d1e3a3f6ddebe2a177a2e75916b0e6d1f2898ee6b25dc986ed542b9757d9@ec2-3-218-149-60.compute-1.amazonaws.com:5432/d2niobfat2fb6a'
+    app.config['SQLALCHEMY_DATABASE_URI'] = 'postgresql://qoxgvaniitknjb:2b0618f540cdb4986f43f138545490b469ca379f9cf35f961ad1826fea7cd487@ec2-44-196-250-191.compute-1.amazonaws.com:5432/ddk764gsjtnc6c'
 
 app.config['SQLALCHEMY_TRACK_MODIFICATIONS'] = False
 
@@ -42,7 +42,6 @@ def createaccount():
     username = request.form['username']
     if email == '' or password == '' or username == '':
         return render_template('signUp.html', message='Please enter requiered fields')
-    # if 
     if db.session.query(AccountInfo).filter(AccountInfo.username == username).count() == 0 and db.session.query(AccountInfo).filter(AccountInfo.email == email).count() == 0:
         data = AccountInfo(email, password, username)
         db.session.add(data)
