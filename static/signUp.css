@@ -1,0 +1,35 @@
+body{
+    font-family: 'Permanent Marker', Arial, sans-serif;
+}
+
+h1{
+    font-size:36x;
+}
+
+p{
+    font-size:18px;
+}
+
+input{
+    font-family: 'Arial', sans-serif, serif;
+    border: none !important;
+    border-bottom: 3px solid black ! important;
+    background-color:inherit !important;
+    width:50%;
+}
+
+.postIT{
+    width:50%;
+    height:50%;
+    background: rgb(255,251,164);
+    background: linear-gradient(328deg, rgba(255,251,164,1) 9%, rgba(255,255,80,1) 98%);
+    padding:5px;
+    margin:1% 25% 0% 25%;
+}
+
+
+
+h1{
+    background-color:inherit;
+    padding: 10px;
+}
