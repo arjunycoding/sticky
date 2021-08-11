@@ -4,6 +4,10 @@ body{
     font-family:Arial, Helvetica, sans-serif;
 
 }
+*{
+    margin:0;
+    padding:0;
+}
 .topb:hover{
     font-size:12px;
     color:rgb(81, 68, 255);
@@ -53,20 +57,6 @@ body{
     margin:25% 25% 25% 25%;
     text-align:center;
 }
-/*#profilePictures{
-    margin:10px;
-    padding:20px;
-    background-color: rgb(0, 0, 0);
-    color:white;
-
-} */
-
-
-*{
-    margin:0;
-    padding:0;
-}
-
 h2 {
     font-weight: bold;
     font-size: 1.25rem;
@@ -102,17 +92,14 @@ ul li{
 }
 ul li:nth-child(even) a{
     transform:rotate(4deg);
-    position:relative;
     top:5px;
 }
 ul li:nth-child(3n) a{
     transform:rotate(-3deg);
-    position:relative;
     top:-5px;
 }
 ul li:nth-child(5n) a{
     transform:rotate(5deg);
-    position:relative;
     top:-10px;
 }
 #addNote{
