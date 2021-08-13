@@ -42,6 +42,16 @@ body{
     letter-spacing:1px;
 
 }
+.header{
+    font-family: 'Permanent Marker', cursive;
+    background:#ffff50;
+    font-weight: lighter;
+    width:100%;
+    padding:5px;
+    position:fixed;
+    z-index:1000;
+    border:solid 1px;
+}
 
 .topBar{
     width:100%;
